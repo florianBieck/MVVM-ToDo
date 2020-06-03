@@ -10,10 +10,6 @@ import com.fbieck.todo.R
 import com.fbieck.todo.data.db.TodoRecord
 import kotlinx.android.synthetic.main.todo_item.view.*
 
-/**
- * @author Naveen T P
- * @since 08/11/18
- */
 class TodoListAdapter(todoEvents: TodoEvents) : RecyclerView.Adapter<TodoListAdapter.ViewHolder>(), Filterable {
 
     private var todoList: List<TodoRecord> = arrayListOf()

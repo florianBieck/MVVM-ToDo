@@ -3,11 +3,6 @@ package com.fbieck.todo.data.db
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
-/**
- * @author Naveen T P
- * @since 08/11/18
- */
-
 @Dao
 interface TodoDao {
 

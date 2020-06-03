@@ -9,10 +9,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
-/**
- * @author Naveen T P
- * @since 08/11/18
- */
 class TodoRepository(application: Application) {
 
     private val todoDao: TodoDao

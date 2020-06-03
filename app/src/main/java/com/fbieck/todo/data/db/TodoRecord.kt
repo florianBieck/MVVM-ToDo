@@ -6,10 +6,6 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 import kotlinx.android.parcel.Parcelize
 
-/**
- * @author Naveen T P
- * @since 08/11/18
- */
 @Entity(tableName = "todo")
 @Parcelize()
 data class TodoRecord(@PrimaryKey(autoGenerate = true) val id: Long?,

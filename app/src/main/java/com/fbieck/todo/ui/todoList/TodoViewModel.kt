@@ -6,10 +6,6 @@ import androidx.lifecycle.LiveData
 import com.fbieck.todo.data.TodoRepository
 import com.fbieck.todo.data.db.TodoRecord
 
-/**
- * @author Naveen T P
- * @since 08/11/18
- */
 class TodoViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository: TodoRepository = TodoRepository(application)

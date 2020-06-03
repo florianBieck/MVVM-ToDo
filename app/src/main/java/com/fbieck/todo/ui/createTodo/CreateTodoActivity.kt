@@ -10,10 +10,6 @@ import com.fbieck.todo.data.db.TodoRecord
 import com.fbieck.todo.utils.Constants
 import kotlinx.android.synthetic.main.activity_create_todo.*
 
-/**
- * @author Naveen T P
- * @since 08/11/18
- */
 class CreateTodoActivity : AppCompatActivity() {
 
     var todoRecord: TodoRecord? = null
