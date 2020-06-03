@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.naveentp.todo">
+    package="com.fbieck.todo">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.todoList.TodoListActivity">
+        <activity android:name="com.fbieck.todo.ui.todoList.TodoListActivity">
             <meta-data
                 android:name="android.app.searchable"
                 android:resource="@xml/searchable" />
@@ -22,7 +22,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.createTodo.CreateTodoActivity" />
+        <activity android:name="com.fbieck.todo.ui.createTodo.CreateTodoActivity" />
     </application>
 
 </manifest>

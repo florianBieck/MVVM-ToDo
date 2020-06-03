@@ -1,4 +1,4 @@
-package com.naveentp.todo.data.db
+package com.fbieck.todo.data.db
 
 import android.os.Parcelable
 import androidx.room.ColumnInfo

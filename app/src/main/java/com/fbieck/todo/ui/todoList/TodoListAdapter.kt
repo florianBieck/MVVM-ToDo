@@ -1,4 +1,4 @@
-package com.naveentp.todo.ui.todoList
+package com.fbieck.todo.ui.todoList
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,8 +6,8 @@ import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
-import com.naveentp.todo.R
-import com.naveentp.todo.data.db.TodoRecord
+import com.fbieck.todo.R
+import com.fbieck.todo.data.db.TodoRecord
 import kotlinx.android.synthetic.main.todo_item.view.*
 
 /**

@@ -1,10 +1,10 @@
-package com.naveentp.todo.ui.todoList
+package com.fbieck.todo.ui.todoList
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import com.naveentp.todo.data.TodoRepository
-import com.naveentp.todo.data.db.TodoRecord
+import com.fbieck.todo.data.TodoRepository
+import com.fbieck.todo.data.db.TodoRecord
 
 /**
  * @author Naveen T P

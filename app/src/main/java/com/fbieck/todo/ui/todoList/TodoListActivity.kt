@@ -1,4 +1,4 @@
-package com.naveentp.todo.ui.todoList
+package com.fbieck.todo.ui.todoList
 
 import android.app.Activity
 import android.app.SearchManager
@@ -12,10 +12,10 @@ import androidx.appcompat.widget.SearchView
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.naveentp.todo.R
-import com.naveentp.todo.data.db.TodoRecord
-import com.naveentp.todo.ui.createTodo.CreateTodoActivity
-import com.naveentp.todo.utils.Constants
+import com.fbieck.todo.R
+import com.fbieck.todo.data.db.TodoRecord
+import com.fbieck.todo.ui.createTodo.CreateTodoActivity
+import com.fbieck.todo.utils.Constants
 import kotlinx.android.synthetic.main.activity_todo_list.*
 import kotlinx.android.synthetic.main.content_main.*
 
