@@ -12,23 +12,23 @@ import kotlinx.coroutines.runBlocking
 class TodoRepository(application: Application) {
 
     private val todoDao: TodoDao
-    private val allTodos: LiveData<List<TodoRecord>>
+
 
     init {
         val database = TodoDatabase.getInstance(application.applicationContext)
         todoDao = database!!.todoDao()
-        allTodos = todoDao.getAllTodoList()
+        //todo
     }
 
     fun saveTodo(todo: TodoRecord) = runBlocking {
         this.launch(Dispatchers.IO) {
-            todoDao.saveTodo(todo)
+            //todo
         }
     }
 
     fun updateTodo(todo: TodoRecord) = runBlocking {
         this.launch(Dispatchers.IO) {
-            todoDao.updateTodo(todo)
+            //todo
         }
     }
 
@@ -36,12 +36,13 @@ class TodoRepository(application: Application) {
     fun deleteTodo(todo: TodoRecord) {
         runBlocking {
             this.launch(Dispatchers.IO) {
-                todoDao.deleteTodo(todo)
+                //todo
             }
         }
     }
 
     fun getAllTodoList(): LiveData<List<TodoRecord>> {
-        return allTodos
+        //todo
+
     }
 }
