@@ -2,47 +2,47 @@ package com.fbieck.todo.data
 
 import android.app.Application
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
+import com.fbieck.todo.data.db.TodoDao
 import com.fbieck.todo.data.db.TodoDatabase
+import com.fbieck.todo.data.db.TodoRecord
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 
 class TodoRepository(application: Application) {
 
-    private val allTodos: LiveData<List<String>>
+    private val todoDao: TodoDao
+
 
     init {
         val database = TodoDatabase.getInstance(application.applicationContext)
-
-        val placeholder: MutableLiveData<List<String>> by lazy {
-            MutableLiveData<List<String>>()
-        }
-        allTodos = placeholder
+        todoDao = database!!.todoDao()
+        //todo
     }
 
-    fun saveTodo(todo: String) = runBlocking {
+    fun saveTodo(todo: TodoRecord) = runBlocking {
         this.launch(Dispatchers.IO) {
-
+            //todo
         }
     }
 
-    fun updateTodo(todo: String) = runBlocking {
+    fun updateTodo(todo: TodoRecord) = runBlocking {
         this.launch(Dispatchers.IO) {
-
+            //todo
         }
     }
 
 
-    fun deleteTodo(todo: String) {
+    fun deleteTodo(todo: TodoRecord) {
         runBlocking {
             this.launch(Dispatchers.IO) {
-
+                //todo
             }
         }
     }
 
-    fun getAllTodoList(): LiveData<List<String>> {
-        return allTodos
+    fun getAllTodoList(): LiveData<List<TodoRecord>> {
+        //todo
+
     }
 }

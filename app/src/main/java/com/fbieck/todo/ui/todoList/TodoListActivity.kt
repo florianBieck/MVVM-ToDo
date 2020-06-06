@@ -9,8 +9,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
-import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.fbieck.todo.R
 import com.fbieck.todo.data.db.TodoRecord
@@ -36,10 +34,7 @@ class TodoListActivity : AppCompatActivity(), TodoListAdapter.TodoEvents {
 
 
         //Setting up ViewModel and LiveData
-        todoViewModel = ViewModelProviders.of(this).get(TodoViewModel::class.java)
-        todoViewModel.getAllTodoList().observe(this, Observer {
-            todoAdapter.setAllTodoItems(it)
-        })
+        //todo
 
         //FAB click listener
         fab_new_todo.setOnClickListener {
@@ -55,7 +50,7 @@ class TodoListActivity : AppCompatActivity(), TodoListAdapter.TodoEvents {
      * */
     //Callback when user clicks on Delete note
     override fun onDeleteClicked(todoRecord: TodoRecord) {
-        todoViewModel.deleteTodo(todoRecord)
+        //todo
     }
 
     //Callback when user clicks on view note
@@ -76,10 +71,10 @@ class TodoListActivity : AppCompatActivity(), TodoListAdapter.TodoEvents {
             val todoRecord = data?.getParcelableExtra<TodoRecord>(Constants.INTENT_OBJECT)!!
             when (requestCode) {
                 Constants.INTENT_CREATE_TODO -> {
-                    todoViewModel.saveTodo(todoRecord)
+                    //todo
                 }
                 Constants.INTENT_UPDATE_TODO -> {
-                    todoViewModel.updateTodo(todoRecord)
+                    //todo
                 }
             }
         }
